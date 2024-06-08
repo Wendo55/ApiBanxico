@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convertidor de Divisas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Convertidor de Divisas</h1>
+  </header>
+
+  <main class="convertidor">
+    <div class="campo">
+      <label for="moneda-origen">Moneda Inicial:</label>
+      <h2>Dólar Americano</h2>
+    </div>
+
+    <div class="campo">
+      <label for="moneda-destino">Moneda a Convertir:</label>
+      <h2>Peso Mexicano</h2>
+    </div>
+
+    <div class="campo">
+      <label for="cantidad">Monto:</label>
+      <input type="number" id="cantidad" value="1">
+    </div>
+
+    <div class="campo">
+      <button onclick="convertirDivisa()">Convertir</button>
+    </div>
+
+    <div id="resultado"></div>
+  </main>
+
+  <script src="convertidor.js"></script>
+</body>
+</html>
